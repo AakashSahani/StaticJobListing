@@ -38,20 +38,20 @@ function JobItem({ job }) {
 					</Button>
 				</li>
 				<li>
-					<Button value={job.level} type={'level'}>
+					<Button value={job.level} type="level">
 						{job.level}
 					</Button>
 				</li>
 				{job.languages.map((language) => (
 					<li key={language}>
-						<Button value={language} type={'languages'}>
+						<Button value={language} type="languages">
 							{language}
 						</Button>
 					</li>
 				))}
 				{job.tools.map((tool) => (
 					<li key={tool}>
-						<Button value={tool} type={'tools'}>
+						<Button value={tool} type="tools">
 							{tool}
 						</Button>
 					</li>
