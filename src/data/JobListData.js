@@ -1,8 +1,8 @@
-const ListingData = [
+const JobListData = [
 	{
 		id: 1,
 		company: 'Photosnap',
-		logo: require('../assets/photosnap.svg'),
+		logo: '../assets/photosnap.svg',
 		new: true,
 		featured: true,
 		position: 'Senior Frontend Developer',
@@ -17,7 +17,7 @@ const ListingData = [
 	{
 		id: 2,
 		company: 'Manage',
-		logo: require('../assets/manage.svg'),
+		logo: '../assets/manage.svg',
 		new: true,
 		featured: true,
 		position: 'Fullstack Developer',
@@ -32,7 +32,7 @@ const ListingData = [
 	{
 		id: 3,
 		company: 'Account',
-		logo: require('../assets/account.svg'),
+		logo: '../assets/account.svg',
 		new: true,
 		featured: false,
 		position: 'Junior Frontend Developer',
@@ -47,7 +47,7 @@ const ListingData = [
 	{
 		id: 4,
 		company: 'MyHome',
-		logo: require('../assets/myhome.svg'),
+		logo: '../assets/myhome.svg',
 		new: false,
 		featured: false,
 		position: 'Junior Frontend Developer',
@@ -62,7 +62,7 @@ const ListingData = [
 	{
 		id: 5,
 		company: 'Loop Studios',
-		logo: require('../assets/loop-studios.svg'),
+		logo: '../assets/loop-studios.svg',
 		new: false,
 		featured: false,
 		position: 'Software Engineer',
@@ -77,7 +77,7 @@ const ListingData = [
 	{
 		id: 6,
 		company: 'FaceIt',
-		logo: require('../assets/faceit.svg'),
+		logo: '../assets/faceit.svg',
 		new: false,
 		featured: false,
 		position: 'Junior Backend Developer',
@@ -92,7 +92,7 @@ const ListingData = [
 	{
 		id: 7,
 		company: 'Shortly',
-		logo: require('../assets/shortly.svg'),
+		logo: '../assets/shortly.svg',
 		new: false,
 		featured: false,
 		position: 'Junior Developer',
@@ -107,7 +107,7 @@ const ListingData = [
 	{
 		id: 8,
 		company: 'Insure',
-		logo: require('../assets/insure.svg'),
+		logo: '../assets/insure.svg',
 		new: false,
 		featured: false,
 		position: 'Junior Frontend Developer',
@@ -122,7 +122,7 @@ const ListingData = [
 	{
 		id: 9,
 		company: 'Eyecam Co.',
-		logo: require('../assets/eyecam-co.svg'),
+		logo: '../assets/eyecam-co.svg',
 		new: false,
 		featured: false,
 		position: 'Full Stack Engineer',
@@ -137,7 +137,7 @@ const ListingData = [
 	{
 		id: 10,
 		company: 'The Air Filter Company',
-		logo: require('../assets/the-air-filter-company.svg'),
+		logo: '../assets/the-air-filter-company.svg',
 		new: false,
 		featured: false,
 		position: 'Front-end Dev',
@@ -151,4 +151,4 @@ const ListingData = [
 	},
 ];
 
-export default ListingData;
+export default JobListData;

@@ -1,5 +1,14 @@
+import Header from './layouts/Header';
+import Main from './layouts/Main';
+import { JobListProvider } from './context/JobListContext';
+
 function App() {
-	return <h1>Static Listing</h1>;
+	return (
+		<JobListProvider>
+			<Header />
+			<Main />
+		</JobListProvider>
+	);
 }
 
 export default App;

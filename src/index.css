@@ -8,7 +8,7 @@
 	/* ### Neutral */
 
 	--LightGrayishCyan: hsl(180, 52%, 96%);
-	--LightGrayishCyan: hsl(180, 31%, 95%);
+	--LightGrayishCyanBg: hsl(180, 31%, 95%);
 	--DarkGrayishCyan: hsl(180, 8%, 52%);
 	--VeryDarkGrayishCyan: hsl(180, 14%, 20%);
 }
@@ -20,6 +20,34 @@
 }
 
 body {
+	width: 100vw;
+	height: 100vh;
 	font-size: 15px;
 	font-family: 'League Spartan', sans-serif;
+}
+
+header {
+	min-height: 100px;
+	width: 100vw;
+	background-image: url('./assets/bg-header-desktop.svg');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-color: var(--DesaturatedDarkCyan);
+}
+
+main {
+	background-color: var(--LightGrayishCyanBg);
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	min-width: 100vw;
+	min-height: 100vh;
+	padding: 2rem;
+}
+
+@media (max-width: 500px) {
+	header {
+		background-image: url('./assets/bg-header-mobile.svg');
+	}
 }
