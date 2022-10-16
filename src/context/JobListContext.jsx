@@ -6,12 +6,13 @@ const JobListContext = createContext();
 export const JobListProvider = ({ children }) => {
 	const [joblist, setJoblist] = useState(JobListData);
 
-	const sayHello = () => {
-		console.log('Hello There');
-		console.log(joblist);
+	const filterList = (type, value) => {
+		const key = type;
+		setJoblist(joblist.filter((job) => job[type] === value));
 	};
+
 	return (
-		<JobListContext.Provider value={{ joblist, setJoblist, sayHello }}>
+		<JobListContext.Provider value={{ joblist, setJoblist, filterList }}>
 			{children}
 		</JobListContext.Provider>
 	);
