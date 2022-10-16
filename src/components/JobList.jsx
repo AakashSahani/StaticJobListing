@@ -4,7 +4,7 @@ import Card from './shared/Card';
 import { useContext } from 'react';
 
 function JobList() {
-	const { joblist, setJoblist, sayHello } = useContext(JobListContext);
+	const { joblist } = useContext(JobListContext);
 
 	return (
 		<ul>

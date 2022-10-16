@@ -1,5 +1,17 @@
-function Button({ children }) {
-	return <button className="btn">{children}</button>;
+import { useContext } from 'react';
+import JobListContext from '../../context/JobListContext';
+
+function Button({ children, value, type }) {
+	const { filterList } = useContext(JobListContext);
+	const handleClick = () => {
+		filterList(type, value);
+	};
+
+	return (
+		<button className="btn" onClick={handleClick}>
+			{children}
+		</button>
+	);
 }
 
 export default Button;
