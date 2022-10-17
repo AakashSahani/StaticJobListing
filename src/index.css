@@ -189,7 +189,7 @@ li .btn:hover {
 	color: var(--LightGrayishCyan);
 }
 
-.company button:last-child {
+.company button:nth-child(3) {
 	background-color: var(--VeryDarkGrayishCyan);
 	color: var(--LightGrayishCyan);
 }
