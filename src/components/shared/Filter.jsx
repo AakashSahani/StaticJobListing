@@ -4,16 +4,18 @@ import { useContext } from 'react';
 
 function Filter() {
 	const { filter } = useContext(JobListContext);
+
+	if (filter.length === 0) {
+		return <div></div>;
+	}
 	return (
 		<div className="filter">
 			{filter.map((item) => (
-				<div className="active">
-					<Button key={item} value="item">
-						{item}
-					</Button>
-					<div key={item}>
+				<div className="active" key={item}>
+					<Button value="item">{item}</Button>
+					<Button value={item}>
 						<img src="./assets/icon-remove.svg" alt="Remove" />
-					</div>
+					</Button>
 				</div>
 			))}
 			<Button value="clear">Clear</Button>

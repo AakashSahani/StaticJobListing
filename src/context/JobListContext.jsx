@@ -10,14 +10,30 @@ export const JobListProvider = ({ children }) => {
 		const key = type;
 		setJoblist(joblist.filter((job) => job[type].includes(value)));
 		const firstlist = joblist[0];
-		console.log(filterList[type]);
-		setFilter((current) => [...current, value]);
-		console.log(filter);
+		if (!filter.includes(value)) {
+			setFilter((current) => [...current, value]);
+		}
+	};
+	const clearFilter = () => {
+		setFilter([]);
+		setJoblist(JobListData);
 	};
 
+	const removeFilter = (value) => {
+		setFilter(filter.filter((filter) => filter != value));
+		setJoblist(JobListData);
+	};
 	return (
 		<JobListContext.Provider
-			value={{ joblist, setJoblist, filterList, filter, setFilter }}
+			value={{
+				joblist,
+				setJoblist,
+				filterList,
+				filter,
+				setFilter,
+				clearFilter,
+				removeFilter,
+			}}
 		>
 			{children}
 		</JobListContext.Provider>

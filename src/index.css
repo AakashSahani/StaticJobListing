@@ -68,6 +68,12 @@ main {
 	margin-right: 2rem;
 	position: absolute;
 	right: 0;
+	background-color: transparent;
+}
+.filter > button:hover {
+	cursor: pointer;
+	text-decoration: underline;
+	text-underline-offset: 2px;
 }
 
 .active {
@@ -99,6 +105,17 @@ main {
 	height: auto;
 	padding: 0.2rem;
 	border-radius: 0.2rem;
+	background-color: var(--DarkGrayishCyan) !important;
+}
+
+.active button:last-child {
+	background-color: var(--DesaturatedDarkCyan);
+	border-radius: 0.2rem;
+}
+
+.active button:last-child:hover {
+	cursor: pointer;
+	background-color: var(--VeryDarkGrayishCyan);
 }
 
 .active > div:hover {
