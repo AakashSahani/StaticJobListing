@@ -1,5 +1,5 @@
 function Card({ children }) {
-	return <div className="card">{children}</div>;
+	return <ul className="card">{children}</ul>;
 }
 
 export default Card;
