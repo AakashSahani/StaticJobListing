@@ -6,11 +6,9 @@ function Button({ children, value, type }) {
 	const handleClick = () => {
 		if (value === 'clear') {
 			clearFilter();
-			console.log(type);
 		}
 		if ((type === undefined) & (value != 'clear')) {
 			removeFilter(value);
-			console.log(value);
 		}
 		if (type != undefined && value != 'clear') {
 			filterList(type, value);

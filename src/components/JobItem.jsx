@@ -2,7 +2,7 @@ import Button from './shared/Button';
 
 function JobItem({ job }) {
 	return (
-		<li>
+		<li className={job.new ? 'new' : ''}>
 			<div className="info-left">
 				<div>
 					<img src={job.logo} alt="Logo" />

@@ -168,7 +168,10 @@ li .btn:hover {
 	background-color: var(--DesaturatedDarkCyan);
 	color: var(--LightGrayishCyan);
 }
-
+.new {
+	border-left: 4px solid var(--DesaturatedDarkCyan);
+	border-radius: 0.2rem;
+}
 .company {
 	display: flex;
 	justify-content: left;
