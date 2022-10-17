@@ -39,7 +39,6 @@ header {
 main {
 	background-color: var(--LightGrayishCyanBg);
 	display: flex;
-	/* justify-content: center; */
 	flex-direction: column;
 	align-items: center;
 	text-align: center;
@@ -50,7 +49,6 @@ main {
 }
 
 .filter {
-	/* border: 1px solid black; */
 	padding: 0 1rem;
 	background-color: white;
 	position: relative;
@@ -235,11 +233,72 @@ img {
 	width: 100%;
 	height: auto;
 }
-@media (max-width: 500px) {
+@media (max-width: 900px) {
 	header {
 		background-image: url('./assets/bg-header-mobile.svg');
 		background-size: cover;
 		background-position: center;
+	}
+	body {
+		min-width: 100vw;
+	}
+	.filter {
+		flex-wrap: wrap;
+		padding-right: 4rem;
+		height: fit-content;
+	}
+	.card {
+		min-height: 250px !important;
+	}
+	.card > li {
+		padding: 0;
+		flex-direction: column;
+		height: 250px !important;
+		padding: 0 1rem;
+	}
+	.details {
+		justify-content: start;
+	}
+	.details > li {
+		min-width: fit-content;
+		width: fit-content !important;
+		margin-right: 0.5rem;
+	}
+	.info-left {
+		position: relative;
+		flex: 1;
+		min-width: 100%;
+		height: auto;
+		border-bottom: 1px solid var(--DarkGrayishCyan);
+	}
+	.info-left .text {
+		text-align: left;
+		min-width: 100%;
+		justify-content: space-evenly;
+		margin-top: 1rem;
+	}
+	.info-left > div:first-child {
+		position: absolute;
+		top: 0;
+		padding: 0;
+		left: 0;
+		transform: translateY(-50%);
+		width: 50px;
+		margin-left: 1rem;
+	}
+	.language {
+		display: flex;
+		height: fit-content;
+		justify-content: start !important;
+		flex: 1;
+		width: 100%;
+		max-height: fit-content !important;
+		flex-wrap: wrap;
+	}
+	.language > li {
+		width: fit-content !important;
+		margin: 0 !important;
+		height: fit-content !important;
 	}
 }
 
