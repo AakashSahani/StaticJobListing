@@ -7,13 +7,13 @@ function JobList() {
 	const { joblist } = useContext(JobListContext);
 
 	return (
-		<ul>
+		<div>
 			{joblist.map((job) => (
 				<Card key={job.id}>
 					<JobItem key={job.id} job={job} />
 				</Card>
 			))}
-		</ul>
+		</div>
 	);
 }
 
