@@ -24,13 +24,13 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
-![](./screenshot.jpg)
+![Desktop Screenshot](./Screenshot%20Desktop%20Vite%20React.png)
+![Mobile Screenshot](./Screenshot%20Mobile%20Vite%20React.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/AakashSahani/StaticJobListing]
+- Live Site URL: [https://regal-figolla-ea7250.netlify.app/]
 
 ## My process
 
